@@ -9,8 +9,6 @@ const ViewPaste = () => {
   console.log(id)
 
   const pastes = useSelector((state) => state.paste.pastes);
-
-  // Filter pastes based on search term (by title or content)
   const paste = pastes.filter((paste) => paste._id === id)[0];
 
   console.log("Paste->",paste);
